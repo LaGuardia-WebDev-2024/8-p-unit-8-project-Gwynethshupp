@@ -2,14 +2,27 @@
 setup = function() {
     size(600, 400);
     background(255,255,255,0);
-    
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+
+    drawmonkey(400,100)
+    draw2monkey(200,400) 
+   
 };
 
 //🟢draw Function - will run on repeat
 draw = function(){
+}
 
+
+
+
+var drawmonkey=function(MonkeyX,MonkeyY) {
+textSize(80);
+text("🐒", MonkeyX, MonkeyY);
+}
+
+var draw2monkey=function(MonkeyX,MonkeyY) {
+textSize(80);
+text("🙈", MonkeyX, MonkeyY);
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked

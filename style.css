@@ -6,7 +6,7 @@
 body {
   background-color: aliceblue;
   text-align: center;
-  color: navy;
+  color: rgb(255, 121, 5);
   margin: auto;
   font-family: water;
 }
@@ -16,7 +16,7 @@ h1{
 }
 
 #myCanvas {
-  background-image: url("https://seaviewinfo.com/wp-content/uploads/2018/07/SeaScape.jpg");
+  background-image: url("https://thumbs.dreamstime.com/b/jungle-background-border-frame-liana-vine-green-leaves-flowers-cartoon-sunny-tropical-backdrop-empty-spa-space-343615561.jpg");
   background-size: 600px 400px;
   border-radius: 300px;
   border: 5px solid white;
