@@ -1,28 +1,38 @@
 //🟢setup Function - will run once
 setup = function() {
     size(600, 400);
-    background(255,255,255,0);
+  ;
 
-    drawmonkey(400,100)
-    draw2monkey(200,400) 
-   
+    
 };
 
 //🟢draw Function - will run on repeat
+var monkeyMove=0;
 draw = function(){
+  background(255,255,255,0)
+  drawmonkey(400,100);
+  draw2monkey(200,500+monkeyMove); 
+  draw3monkey(70,300);
+monkeyMove++;
+if(monkeyMove>350){
+  monkeyMove = -200;
 }
 
-
-
+}
 
 var drawmonkey=function(MonkeyX,MonkeyY) {
-textSize(80);
+textSize(70);
 text("🐒", MonkeyX, MonkeyY);
-}
+};
 
 var draw2monkey=function(MonkeyX,MonkeyY) {
+textSize(200);
+text("🙈", MonkeyX, MonkeyY); 
+};
+
+Var draw3monkey=function (MonkeyX,MonkeyY){
 textSize(80);
-text("🙈", MonkeyX, MonkeyY);
+text("🙊", MonkeyX, MonkeyY);
 };
 
 //🟢mouseClicked Function - will run when mouse is clicked
