@@ -9,13 +9,20 @@ setup = function() {
 //🟢draw Function - will run on repeat
 var monkeyMove=0;
 draw = function(){
-  background(255,255,255,0)
+ background(255,255,255,0)
+ 
+  background monkeys// 
   drawmonkey(400,100);
-  draw2monkey(200,500+monkeyMove); 
   draw3monkey(70,300);
-monkeyMove++;
-if(monkeyMove>350){
-  monkeyMove = -200;
+
+  Makes Tiger// textSize(240);
+  text("🐅",mouseX, mouseY);
+  
+  Moves2ndMonkey// 
+  draw2monkey(200,450+monkeyMove); 
+  monkeyMove++;
+  if(monkeyMove>350){
+  monkeyMove = -60;
 }
 
 }
