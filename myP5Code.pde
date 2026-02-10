@@ -11,14 +11,16 @@ var monkeyMove=0;
 draw = function(){
  background(255,255,255,0)
  
-  background monkeys// 
+  //background monkeys// 
   drawmonkey(400,100);
   draw3monkey(70,300);
 
-  Makes Tiger// textSize(240);
+  //Makes Tiger// 
+  textSize(240);
   text("🐅",mouseX, mouseY);
   
-  Moves2ndMonkey// 
+  //Monkeymove//
+
   draw2monkey(200,450+monkeyMove); 
   monkeyMove++;
   if(monkeyMove>350){
@@ -26,7 +28,6 @@ draw = function(){
 }
 
 }
-
 var drawmonkey=function(MonkeyX,MonkeyY) {
 textSize(70);
 text("🐒", MonkeyX, MonkeyY);
